@@ -1,0 +1,9 @@
+def fun(n,r):
+    if r==0 or r==n:
+        return 1
+    else:
+        return fun(n-1,r-1) + fun(n-1,r)
+
+n=int(input("enter the value of n:"))
+r=int(input("enter the value of r:"))
+fun(n,r)
