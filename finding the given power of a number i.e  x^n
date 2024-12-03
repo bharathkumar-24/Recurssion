@@ -1,0 +1,11 @@
+def fun(x,n,y=1):
+    if n==0:
+        return y
+    if n<0:
+        return ("enter a positive number")
+    else:
+        y=y*x
+        return fun(x,n-1,y)
+x=int(input("enter the number:"))
+n=int(input("enter the power:"))
+fun(x,n)
