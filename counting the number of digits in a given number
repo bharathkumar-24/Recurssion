@@ -1,0 +1,6 @@
+def count(n,x=0):
+    if n==0:
+        return x
+    else:
+        return count(n//10,x+1)
+count(int(input("enter a number:")))
