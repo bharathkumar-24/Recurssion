@@ -1,0 +1,10 @@
+def gcd(a,b):
+     if b==0:
+         return a
+     elif b>a:
+         return gcd(a,b%a)
+     else:
+         return gcd(b,a%b)
+x=int(input("enter the first number:"))
+y=int(input("enter the second number:"))
+gcd (x,y)
